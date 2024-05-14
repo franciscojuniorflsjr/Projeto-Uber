@@ -83,7 +83,7 @@ accent-color: #fff;
     text-decoration: underline;
 }
 
-.cadastro .btn {
+.cadastro #btn {
     width: 100%;
     height: 45px;
     background: #fff;

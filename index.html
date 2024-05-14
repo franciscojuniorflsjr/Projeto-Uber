@@ -20,31 +20,35 @@
 
          <h1>Login </h1>
         <div class="cadastro-uber">
-            <input  type="text" name="nome" id="nome" 
+            <input type="text" id="nome" 
             placeholder="Digite seu nome"> <i class='bx bxs-user'></i>
         </div>
 
         <div class="cadastro-uber">
-             <input c type="password" name="senha"placeholder="Senha">
+             <input type="password" id="senha" 
+              placeholder="Senha">
              <i class='bx bxs-lock-alt'></i>
         </div>
 
         <div class="nova-senha">
-            <label for="cadastro-uber"><input type="checkbox"           
-                 name="confirma-usuario" id="confirma-usuario">Salvar 
-                 dados  </label> <a href="#">Esqueci minha senha?</a>
+            <label for="salvar-dados"><input type="checkbox"           
+             name="confirma-usuario" id="salvar-dados">Salvar 
+             dados  </label> <a href="#" id="nova-senha">
+                Esqueci minha senha?</a>
         </div>
 
-       <button type="submit" class="btn" value="entrar">Fazer login</button>
+     
+        <button type="submit" id="btn"value="entrar">Fazer login</button> 
+       
 
         <div class="novo-usuario">
             <p>Não tem uma canta?</p>
-            <a href="#">Inscreva-se</a>
+            <a href="#" id="novo-cadastro">Inscreva-se</a>
         </div>
 
 
     </form>
 </section>
-
+<script src="js/index.js"></script>
 </body>
 </html> 
