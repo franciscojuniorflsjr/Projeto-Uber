@@ -1,20 +1,3 @@
-/*const btn = document.querySelector('#btn')
-const haeder = document.querySelector('h1')
-
-btn.addEventListener("click",function(e) {
-e.preventDefault();
-
-    const email = document.querySelector('#email').value;
-    console.log(emailAtivo);
-    const senha = document.querySelector('#senha').value;
-    console.log(senha) 
-
-    haeder.innerHTML = 'Bem Vindo!'
-
-
-})
-
-*/
     function validarEntradaEmail(){
         alterarBotaoDesabilitado();
         alterarErroEmail();
@@ -89,3 +72,5 @@ e.preventDefault();
  function validateEmail(email){
     return /\S+@\S+\.\S+/.test(email);
  }
+
+ 
