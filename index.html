@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Controle de Finaças Uber</title>
+    <link rel="stylesheet" href="assets/css/global.css">
     <link rel="stylesheet" href="assets/css/styleCadastro.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
  
@@ -15,6 +16,7 @@
     <form class="cadastro" action="" method="post">
 
          <h1>Login </h1>
+         <div class="form-filed">
         <div class="cadastro-uber">
             <input type="text" name="email"  id="email" 
             onchange="validarEntradaEmail()"  placeholder="seu@email.com"> 
@@ -24,13 +26,16 @@
             <span class="erro" id="email-invalido-erro" >Email é 
             inválido</span>
         </div>
+    </div>
 
+        <div class="form-filed">
         <div class="cadastro-uber">
              <input type="password" name="senha" id="senha"
              onchange="ValidarEntradaSenha()" placeholder="Senha"> 
               <i class='bx bxs-lock-alt'></i>
               <span class="erro" id="senha-obrigatoria-erro">Senha Obrigatoria</span>
         </div>
+    </div>
 
         <div class="nova-senha">
             <label for="salvar-dados"><input type="checkbox"           
@@ -49,12 +54,13 @@
 
         <div class="novo-usuario">
             <p>Não tem uma canta?</p>
-            <a href="#" id="novo-cadastro">Inscreva-se</a>
+            <a href="cadastro.html" id="novo-cadastro">Inscreva-se</a>
         </div>
 
 
     </form>
 </section>
 <script src="js/main.js"></script>
+<script src="js/validate.js"></script>
 </body>
 </html> 
