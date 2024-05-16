@@ -11,34 +11,35 @@
 <body>
     
     <section class="login-img">
-<!--
-        <div class="foto-capa">
-            <img src="assets/img/foto-inicial.jpeg" alt="foto-capa">    
-        </div> -->
 
     <form class="cadastro" action="" method="post">
 
          <h1>Login </h1>
         <div class="cadastro-uber">
-            <input type="text" id="nome" 
-            placeholder="Digite seu nome"> <i class='bx bxs-user'></i>
+            <input type="text" name="email"  id="email" 
+            onchange="validaEntrada()"  placeholder="seu@email.com"> 
+            <i class='bx bxs-user'></i>
         </div>
 
         <div class="cadastro-uber">
-             <input type="password" id="senha" 
-              placeholder="Senha">
-             <i class='bx bxs-lock-alt'></i>
+             <input type="password" name="senha" id="senha"
+             onchange="validaEntrada()" placeholder="Senha"> 
+              <i class='bx bxs-lock-alt'></i>
         </div>
 
         <div class="nova-senha">
             <label for="salvar-dados"><input type="checkbox"           
              name="confirma-usuario" id="salvar-dados">Salvar 
-             dados  </label> <a href="#" id="nova-senha">
-                Esqueci minha senha?</a>
+             dados  </label> 
+             <button type="button" id="reset-senha"disabled="true" >
+                 Esqueci minha senha? </button>
+             
+               
         </div>
 
      
-        <button type="submit" id="btn"value="entrar">Fazer login</button> 
+        <button type="submit" nome="btn" id="btn" disabled="true">Fazer 
+        login</button> 
        
 
         <div class="novo-usuario">
@@ -49,6 +50,6 @@
 
     </form>
 </section>
-<script src="js/index.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html> 
