@@ -120,3 +120,10 @@ accent-color: #fff;
 .novo-usuario  a:hover{
 text-decoration: underline;
 }
+.erro {
+    background: rgba(19, 19, 20, 0.748);
+    color: #e90f0f;
+    padding: 10px;
+    border-radius: 10px;
+    display: none;
+}

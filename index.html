@@ -17,14 +17,19 @@
          <h1>Login </h1>
         <div class="cadastro-uber">
             <input type="text" name="email"  id="email" 
-            onchange="validaEntrada()"  placeholder="seu@email.com"> 
+            onchange="validarEntradaEmail()"  placeholder="seu@email.com"> 
             <i class='bx bxs-user'></i>
+            <span class="erro" id="email-obrigatorio-erro">Email é 
+            obrigatório</span>
+            <span class="erro" id="email-invalido-erro" >Email é 
+            inválido</span>
         </div>
 
         <div class="cadastro-uber">
              <input type="password" name="senha" id="senha"
-             onchange="validaEntrada()" placeholder="Senha"> 
+             onchange="ValidarEntradaSenha()" placeholder="Senha"> 
               <i class='bx bxs-lock-alt'></i>
+              <span class="erro" id="senha-obrigatoria-erro">Senha Obrigatoria</span>
         </div>
 
         <div class="nova-senha">
