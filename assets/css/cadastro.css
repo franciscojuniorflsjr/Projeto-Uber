@@ -1,36 +1,40 @@
-body {background:url(../img/foto-inicial.jpeg) ;
-    background-repeat: no-repeat;
-   
-   
-    
-}
+
 .main-cadastro{
+    background:url(../img/8\ Best\ Car\ Maintenance\ Apps\ Available.jpeg) ;
+    
     display:flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; 
+    min-height:100vh ;
+    background-size: cover;
+    background-position:center;
     
     
 
 }
-.container h2 {
-    font-size: 28px;
+.container h1 {
+    font-size: 30px;
     color: antiquewhite;
+    margin: 15px;
+    padding-bottom: 10px;
 }
 
 .container{
-    width: 300px;
-    height: 300px;
+    width: 320px;
+    height: 320px;
     background: rgba(95, 93, 93, 0.399); 
     border-radius: 8px;
     
 }
 
-.cadastro {
-    padding: 15px 0 15px 0;
-text-align: center;
+.cadastro input {
+    width: 100%;
+    height: 100%;
+    border-radius: 17px;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    font-size: 16px;
+    padding: 10px;
 
-}
-.botao-cadastar{
-   
 }
