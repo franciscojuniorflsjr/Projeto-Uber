@@ -1,6 +1,6 @@
 // limpando  o código Main.js usando operadores ternarios.
  
-
+/*
 function validarEntradaEmail(){
     alterarBotaoDesabilitado();
     alterarErroEmail();
@@ -69,3 +69,4 @@ bnt:() => document.getElementById('bnt'),
 
 
 }
+*/ 
