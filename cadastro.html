@@ -13,23 +13,31 @@
     <form action="" class="container">
         <h1>Cadastrar Usuário </h1>
     '' <div class="cadastro"> 
-           <label for="email-usuario"></label>
+           <label for="nome-usuario"></label>
         <input type="text" name="nome" id="nome-usuario" placeholder="Nome :">
         </div>
+
     <div class="cadastro"> 
         <label for="email-usuario"></label>
-        <input type="text" name="email" id="email-usuario" placeholder="e-mail :">
+        <input type="text" name="email" id="email-usuario" validaEntradaEmail()
+        placeholder="e-mail :">
+        <span class="erro" id="email-obrigatorio-erro"> Email é obrigatório></span>
+        <span class="erro" id="email-invalido-erro" >Email é inválido</span>
     </div>
+
     <div class="cadastro">
         <label for="senha-usuario"></label>
         <input type="password" name="senha-usuario" id="senha-usuario"
-         placeholder="Criar senha :">
+        validaEntradaSenha() placeholder="Criar senha :">
+         <span class="erro" id="senha-obrigatoria-erro">Senha Obrigatoria</span>
     </div>
+
     <div class="cadastro">
         <label for="repetir-senha-usuario"></label>
         <input type="password" name="senha-usuario" id="repetir-senha-usuario" 
         placeholder="Confirma senha :">
     </div>
+
     <div class="cadastro-botao">
         <input type="submit" value="Concluir" id="botao-cadastar">
     </div>

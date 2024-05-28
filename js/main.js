@@ -1,4 +1,4 @@
-    function validarEntradaEmail(){
+    function validarEntradaEmail(){ //ValidarCadastroEmail() cadastro js
         alterarBotaoDesabilitado();
         alterarErroEmail();
       
