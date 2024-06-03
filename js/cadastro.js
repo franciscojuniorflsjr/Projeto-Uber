@@ -1,31 +1,38 @@
-document.getElementById('container').addEventListener('submit', function(e) {
+document.getElementById('containerFrom').addEventListener('submit', function(e) {
    e.preventDefault();
 
-    const nome = document.getElementById('nome-usuario').value
-    const email = document.getElementById('email-usuario').value
-    const senha = document.getElementById('senha-usuario').value
+    const nome = document.getElementById('nome-usuario').value;
+    const email = document.getElementById('email-usuario').value;
+    const senha = document.getElementById('senha-usuario').value;
     const repetirSenha = document.getElementById
-    ('repetir-senha-usuario').value 
+    ('repetir-senha-usuario').value; 
 
-    if (senha !== repetirSenha)
-        alert('A senha não conferem!');
+    if (senha !== repetirSenha){
+        alert('As senhas não conferem!');
     return;
-
+    }
 
     const dadosUsuario = {
         nome: nome,
         email: email,
         senha: senha
     };
-
-    localStorage.setItem('dadosUsuario',JSON.stringify(dadosUsuario));
-    alert('Dados salvos com sucesso!');
-
+    try {
+        const dadosString = JSON.stringify( dadosUsuario);
+         localStorage.setItem('dadosUsuario', dadosString);
+         alert('Dados salvos com sucesso!')
+         console.log('Dados salvos:', dadosString);
+    } catch (error) {
+        console.error('Erro ao salvar os dados:', error);
+    }
 });
 
 function acessarDados(){
-    const dadosUsuario =            
-     JSON.parse(localStorage.getItem('dadosUsuario'));
+    try {
+        const dadosString = localStorage.getItem('dadosUsuario');   
+        console.log('Dados recuperados:', dadosString)
+        const dadosUsuario = JSON.parse(dadosString)         
+ 
      
      if (dadosUsuario){
         console.log('Nome:', dadosUsuario.nome);
@@ -33,12 +40,8 @@ function acessarDados(){
         console.log('Senha:', dadosUsuario.senha);
      } else {
         console.log('Nenhum dado encontrado.')
-
      }
+     } catch (error) {
+        console.erro('Erro ao acessr os dados.')
     }
-acessarDados();
-
-
-
-
-
+}
