@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Lucro</title>
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/meuCadastro.css">
+</head>
+<body>
+    <section class="containerMeuCadastro">
+   
+       <h1>Controle diario para motorista de app</h1>
+     
+               
+      <section >
+       <h2>Despesas</h2>
+         <form action="">
+           <div class="form-despesas">
+           <div class="colum">
+           <div class="form-group">
+
+                <label for="km">KM inicial</label>
+                <input type="number" id="km" name="km" required>
+                <button type="submit">Adicionar</button>   
+           </div> 
+
+            <div class="form-group">
+                <label for="combustivel">Combustível:</label> 
+                <input type="number" id="combustivel" 
+                name="combustivel" required>
+               <button type="submit">Adicionar</button>
+              </div>
+              
+             <div class="form-group">
+                <label for="lavajato">Lava-jato</label>  
+                <input type="number" id="manutencao" 
+                name="manutencao" required>
+                <button type="submit">Adicionar</button>
+             </div> 
+              
+             <div class="form-group">
+                <label for="hora">hora logada:</label>
+                <input type="time" name="hora" id="hora">
+                <button type="submit">Adicionar</button>
+            </div> 
+        </div>
+
+             <div class="colum">
+             <div class="form-group"> 
+                  <label for="qlimentacao">Alimentação:</label>
+                <input type="number" name="lavajato" 
+                id="lavajato">
+                <button type="submit">Adicionar</button>
+            </div>
+
+            <div class="form-group">
+                <label for="Aluguel">Aluguel</label>
+                <input type="number" name="aluguel" 
+                id="aluguel">
+                <button type="submit">Adicionar</button>
+            </div>
+
+            <div class="form-group">
+                  <label for="manutencao">Manutenção:</label> 
+                  <input type="number" id="alimentacao" 
+                name="alimentacao" required>
+                <button type="submit">Adicionar</button>
+            </div>
+
+            <div class="form-group">
+                  <label for="km">Km final</label>
+                <input type="number" id="km" name="km" required>
+                <button type="submit">Adicionar</button>   
+       
+         </div>
+        </div>
+    </div>
+       <div class="calcular-despesas">
+           <button type="submit">Calcular</button> 
+       </div>  
+</form>  
+ </section>
+      
+
+        <section class="containerMeuCadastro">
+          <h2>Ganhos</h2>
+
+            <div class="ganhos">
+            <div class="form-group">
+                <label for="ganhosbrutos">Bruto:</label>
+                <input type="number" id="ganhosbrutos" 
+                name="ganhosbrutos" required>
+                <button type="submit">Adicionar</button>
+            </div> 
+
+             <div class="form-group">
+                  <label for="ganhosliquidos">Liquidos:</label>
+                <input type="number" id="ganhosliquidos" 
+                name="ganhosliquidos" required>
+                <button type="submit">Adicionar</button>
+             </div>   
+        </div>
+        </section>
+
+
+        <section >       
+            <h2>Meta</h2>
+            <div class="netas">
+                <label for="metaDiaria">Diaria:</label>
+                <input type="number" id="metaDiaria" placeholder="R$500,00">
+                <button type="submit">Adicionar</button>
+            </div>  
+            <div class="metas">
+                <label for="metaDiaria">Semanal:</label>
+                <input type="number" id="metaSemanal" 
+                placeholder="R$3.000,00"> 
+                <button type="submit">Adicionar</button>
+            </div>  
+            <div class="metas">
+                <label for="metaDiaria">Mensal:</label>
+                <input type="number" id="metaMensal" 
+                placeholder="R$12.000,00">
+                <button type="submit">Adicionar</button>
+        </div>    
+     
+        
+        </section>
+
+ </section>        
+</body>
+</html>

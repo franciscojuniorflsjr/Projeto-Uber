@@ -1,0 +1,90 @@
+body{
+ background-color: rgb(82, 80, 80);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    
+    
+}
+
+.containerMeuCadastro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 5rem;
+}
+
+
+h1 {
+    font-size: 1.5rem;
+    text-align: center;
+    color:aliceblue;
+    padding:2rem;
+
+}
+   
+.form-despesas,.ganhos,.metas {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.colum {
+  flex: 1;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+
+     color:aliceblue;
+     margin: 0.1rem;
+}
+
+
+
+h2{
+    font-size: 1.3rem;
+    color:rgb(254, 130, 7);
+    margin-bottom: 0.5rem;
+}
+
+
+
+.despesas{
+display: flex;
+flex-direction: column;
+text-align: center;
+}
+
+
+
+button {
+   
+    background-color: rgba(254, 131, 7, 0.625);
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    margin: 0.8rem;
+    max-width:8rem;
+    border-radius:9px;
+}
+input{
+  max-width: 7rem;
+}
+
+.calcular-despesas {
+    display: flex;
+    justify-content: center;
+}
+
+.metas {
+  display: block;
+  text-align: center;
+  align-items: center;
+}
