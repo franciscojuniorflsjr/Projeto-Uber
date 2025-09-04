@@ -18,7 +18,7 @@ body{
 h1 {
     font-size: 1.5rem;
     text-align: center;
-    color:aliceblue;
+    color:rgb(206, 213, 223);
     padding:2rem;
 
 }
@@ -41,7 +41,7 @@ h1 {
 
 label {
 
-     color:aliceblue;
+     color:rgb(157, 159, 162);
      margin: 0.1rem;
 }
 
@@ -49,7 +49,7 @@ label {
 
 h2{
     font-size: 1.3rem;
-    color:rgb(254, 130, 7);
+    color: rgb(81, 105, 41);
     margin-bottom: 0.5rem;
 }
 
@@ -65,7 +65,7 @@ text-align: center;
 
 button {
    
-    background-color: rgba(254, 131, 7, 0.625);
+    background-color: rgb(81, 105, 41);
     color: white;
     border: none;
     padding: 0.5rem;
