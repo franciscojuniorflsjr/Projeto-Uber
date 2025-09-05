@@ -12,6 +12,7 @@ body{
     justify-content: center;
     align-items: center;
     
+    
 }
 
 
@@ -19,7 +20,7 @@ h1 {
     font-size:1.8rem;
     text-align: center;
     color:rgb(206, 213, 223);
-    padding:0.5rem;
+    padding: 1rem;
 
 }
    
